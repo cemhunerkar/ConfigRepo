@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: conf
+  datasource:
+    url: jdbc:mariadb://localhost:3306/cemgiz?user=root&password=root
+    driver-class-name: org.mariadb.jdbc.Driver
+server:
+  port: 8080
