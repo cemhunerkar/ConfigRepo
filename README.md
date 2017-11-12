@@ -9,7 +9,8 @@ Technologies:
 - Spring Test
 - Spring Scheduling
 
-#Usage
+# Usage
+
 Currently the unit tests are problematic so you need to build with:
 
 mvn clean package -DskipTests=true
@@ -19,6 +20,7 @@ java -jar ConfigurationService.jar --refresh=[cacheRefreshPeriodInMs] --spring.d
 
 
 GET Services
+
 http://localhost:8080/confs
 
 http://localhost:8080/conf/{confId}
