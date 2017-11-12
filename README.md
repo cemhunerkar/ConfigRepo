@@ -8,21 +8,31 @@ Technologies:
 - Spring Rest Controller
 - Spring Test
 - Spring Scheduling
+- Maven
 
 # Usage
 
-Currently the unit tests are problematic so you need to build with:
+Currently the unit tests are in progress so you need to build with:
 
+`
 mvn clean package -DskipTests=true
+`
 
-To run:
-java -jar ConfigurationService.jar --refresh=[cacheRefreshPeriodInMs] --spring.datasource.url="[datasourceUrl including user and password]" --applicationName=[applicationName]
+# DB
+
+Create db table using the script in testConf folder
+
+# Run
+
+`java -jar ConfigurationService.jar --refresh=[cacheRefreshPeriodInMs] --spring.datasource.url="[datasourceUrl including user and password]" --applicationName=[applicationName]`
 
 
-GET Services
+# GET Services
 
+`
 http://localhost:8080/confs
 
 http://localhost:8080/conf/{confId}
 
 http://localhost:8080/conf/{confKey}
+`
